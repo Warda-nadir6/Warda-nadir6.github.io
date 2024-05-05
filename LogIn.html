@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+header {
+            background: #dd4001;
+            color: #f3bbae;
+            text-align: left;
+            padding: 1rem;
+            width: 100%;
+            /* position:static; */
+        }
+
+        nav {
+            background-color: #d67751;
+            padding: 0.5rem;
+            width: 100%;
+            /* position: fixed; */
+            margin-left: -16px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <center><font size="7" face="Forte">BRANDSTORE</font></center>
+        </h1>
+        <nav id="container">
+
+            <font size="3"><a href="index.html">Home</a>
+              <a href="sitemap.html" target="_blank">sitemap</a>
+
+
+                <a href="index.html">Home</a>
+                <a href="Men.html">Men</a>
+                <a href="Women.html">Women</a>
+                <a href="Children.html">Children</a>
+                <a href="LogIn.html">LogIn</a>
+                <!-- <b><a href="login.html"><button><font size="4">Log In</font></button></a></b> -->
+                <!-- <a href="#"> Portfolio</a> -->
+                <!-- <form class="search">
+                    <input type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit">Search</button>
+                </form> -->
+            </font>
+
+        </nav>
+    </header>
+  <div class="login-container">
+    <form id="login-form">
+      <h2>Login</h2>
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Login</button>
+      <script src="script.js"></script>
+    </form>
+    
+  </div>
+</body>
+</html>
